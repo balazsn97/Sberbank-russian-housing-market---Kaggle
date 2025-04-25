@@ -1,0 +1,12 @@
+Preprocessing:
+Analyzing temporal dynamic of target -- there is a linear trend in prices, added as a new feature
+Analyzing missing value distribution for macro and train/test dataset, correlations, other EDA related tasks
+Using PCA on macro dataset and mapping PCs to train/test by dates
+Imputing missing data on train/test with simple imputer
+Running XGB to select top 50 features based on 'gain'
+Running iterative imputer on the selected columns with random forest regressor for better imputation
+Running XGB on selected features
+
+Best score: 
+private - 0.32823
+public - 0.32791
